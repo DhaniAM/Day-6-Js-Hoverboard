@@ -1,10 +1,11 @@
 const board = document.querySelector(".board");
 const colors = [
-	"#4deeea",
-	"#74ee15",
-	"#ffe700",
-	"#f000ff",
-	"#001eff",
+	"#751A33",
+	"#B34233",
+	"#D28F33",
+	"#D4B95E",
+	"#4EA2A2",
+	"#1A8693"
 ];
 
 for (let count = 1; count <= 144; count++) {
@@ -19,7 +20,7 @@ function addColor(element) {
 	const pickColor = Math.floor(Math.random() * colors.length);
 	const color = colors[pickColor];
 	element.style.background = color;
-	element.style.boxShadow = `0px 0px 10px ${color}`;
+	element.style.boxShadow = `0px 0px 5px ${color}`;
 }
 
 function removeColor(element) {
